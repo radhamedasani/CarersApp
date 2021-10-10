@@ -6,15 +6,15 @@ const CarerItem = props => {
   return (
     <Styled.ItemContainer>
       <Styled.Avatar src={photo} />
-      <Styled.Info>
-        <Styled.ItemContainer>
+      <Styled.Content>
+        <Styled.Info>
           <Styled.Name>{name}</Styled.Name>
           <Styled.Slots>{`${slots} slots available`}</Styled.Slots>
-        </Styled.ItemContainer>
+        </Styled.Info>
         <Styled.Availability onClick={() => onClickAvailability(name)}>
           Check Availability
         </Styled.Availability>
-      </Styled.Info>
+      </Styled.Content>
     </Styled.ItemContainer>
   )
 }

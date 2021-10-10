@@ -4,19 +4,25 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
 `
 
 export const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 25%;
+  margin-top: 35px;
+  width: 23%;
+  padding-left: 20px;
 `
 export const Avatar = styled.img`
   width: 80%;
   height: 220px;
+  align-self: flex-end;
 `
 
-export const Info = styled.div`
+export const Content = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -24,7 +30,11 @@ export const Info = styled.div`
   font-family: Cairo;
   font-style: normal;
   height: 60px;
-  padding: 8px 16px;
+  padding: 8px 0px;
+`
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 export const Name = styled.p`
